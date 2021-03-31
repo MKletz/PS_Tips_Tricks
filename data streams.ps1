@@ -1,7 +1,8 @@
 function MyFunction {
     [CmdletBinding()]
     param()
-    Write-Output -InputObject "Output"
+    Write-Output -InputObject "I'm adding some numbers"
+    5 + 5
 }
 MyFunction | Tee-Object -Variable MyVar
 $MyVar
@@ -62,7 +63,7 @@ $MyVar4
 function MyFunction {
     [CmdletBinding()]
     param()
-    Write-Information -MessageData "Got your features!" -InformationAction Continue -
+    Write-Information -MessageData "Got your features!" -InformationAction Continue
     5 + 5
 }
 MyFunction | Tee-Object -Variable MyVar5

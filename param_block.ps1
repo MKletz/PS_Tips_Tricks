@@ -53,3 +53,5 @@ Test-ParamBlocks -Name 'Tom' -Age 51
 Test-ParamBlocks -Name 'Tom' -OS 'Microsoft Windows Server 2019 Domain Controller' -Browser 'Microsoft Edge'
 
 Show-Command Test-ParamBlocks
+
+Test-ParamBlocks -Browser 'Microsoft Edge' -OS 'Microsoft Windows 10 Enterprise'

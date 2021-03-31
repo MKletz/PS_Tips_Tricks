@@ -9,7 +9,7 @@ function Update-File {
         [string]$Value
     )
     
-    begin {     
+    begin {
     }
     
     process {
@@ -18,7 +18,7 @@ function Update-File {
         Set-Content -Path $Path -Value $Content
     }
     
-    end {       
+    end {
     }
 }
 Measure-Command -Expression {1..1000 | Update-File -Path .\testfile.txt}
